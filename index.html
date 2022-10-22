@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contador">
+            <h2>CRONOMETRO</h2>
+            <div class="container-number">
+                <p id="hours">0</p>
+                <p>:</p>
+                <p id="minutes">0</p>
+                <p>:</p>
+                <p id="seconds">0</p>
+            </div>
+
+            <div class="botones">
+                <button id="reset">RESET</button>
+                <button id="start">START</button>
+                <button id="stop">STOP</button>
+
+            </div>
+
+        </div>
+        <div class="Temporizador">
+            <h2>TEMPORIZADOR</h2>
+
+            <form action="">
+                <input id="hourTemp" type="number" min="0" placeholder="HH">
+                <input id="minuteTemp" type="number" min="0" placeholder="MM">
+                <input id="secondTemp" type="number" min="0" placeholder="SS">
+
+
+            </form>
+
+            <div class="container-number">
+                <p id="hoursTempHtml">0</p>
+                <p>:</p>
+                <p id="minutesTempHtml">0</p>
+                <p>:</p>
+                <p id="secondsTempHtml">0</p>
+            </div>
+
+
+
+            <div class="botones">
+                <button id="resetTemp">RESET</button>
+                <button id="startTemp">START</button>
+                <button id="stopTemp">STOP</button>
+                <button id="renewTemp">RENEW</button>
+
+                <audio controls id="audio">
+                    <source src="./Sonido/Efecto de Sonido- Alarma (reloj despertador).mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
